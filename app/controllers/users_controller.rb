@@ -27,7 +27,7 @@ class UsersController < ApplicationController
 
   def show
     user = User.find(params[:id])
-    render text: "params: #{params.inspect} user: #{user.full_name}"
+    render text: "user: #{user.full_name}, Age: #{user.age}"
   rescue ActiveRecord::RecordNotFound
     render text: "Sorry, user with id of #{params[:id]} was not found", status: 404
   end
