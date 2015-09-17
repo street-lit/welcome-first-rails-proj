@@ -8,6 +8,8 @@ If your application is running successfully, you should see the prompt that disp
 <strong>Welcome aboard</strong> 
 <em>You're riding Ruby on Rails!</em>
 
+## Commands
+
 ### View all users
 In order to view all users from the database, the user must enter a url in the format: `http://localhost:3000/users`
 
