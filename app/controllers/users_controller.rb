@@ -8,10 +8,10 @@ class UsersController < ApplicationController
     elsif params.size ==  2
       users_list = []
       users_list = users.map do |user|
-        "#{user.full_name}, #{user.age}"
+        "#{user.full_name}, #{user.age} <br>"
       end
     users_formatted = users_list.join(" ")
-      render({text: "Hello, this is all the users: #{users_formatted} Params: #{params.inspect} ", status: 200})
+      render({text: "Hello, this is all the users: <br><br> #{users_formatted} <br> Params: #{params.inspect} ", status: 200})
     elsif params.size > 2 && params.has_key?(:first_name)
       users_list = User.where("first_name LIKE ?", "#{params[:first_name]}%")
       users_list = users_list.map { |user| "#{user.full_name}, #{user.age}" }
