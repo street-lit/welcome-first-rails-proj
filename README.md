@@ -24,5 +24,8 @@ In order to view specific users whose name starts with a certain character from 
 ### View certain users with queries
 In order to view a certain limit of users with an offset from the database, the user must enter a url in the following format: `http://localhost:3000/users?limit=10&offset=10`
 
-### Delete a specific user
+### Deleting a user
 In order to delete a certain user from the database, the user must enter a url in the following format: `http://localhost:3000/users/1/delete`
+
+### Adding a user to the database
+In order to add a user to the database, the user must enter a url in the following format: `http://localhost:3000/users/create?first_name=John&last_name=Smith&age=99`
